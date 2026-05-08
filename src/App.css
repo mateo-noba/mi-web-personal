@@ -1,0 +1,14 @@
+html{
+  height: 100%;
+  margin: 0%;
+}
+
+body{
+  height: 100%;
+  margin: 0%;
+  background-color: #111827;
+}
+
+.appPrincipal h1{
+  color: #C9D1D9;
+}
