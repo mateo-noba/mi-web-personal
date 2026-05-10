@@ -8,7 +8,6 @@ export function Navbar(){
             </div>
             <div className='nabvarDerecha'>
                 <a href='#'>Perfil profecional</a>
-                <a href='#'>Contactos</a>
                 <a href='#'>Proyectos</a>
             </div>
         </div>
