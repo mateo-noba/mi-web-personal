@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/mi-web-persona',
+  base: '/mi-web-personal',
   plugins: [react()],
 })
