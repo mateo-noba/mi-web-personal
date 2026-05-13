@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 html{
   height: 100%;
   margin: 0%;
@@ -10,15 +12,19 @@ body{
 }
 
 .appPrincipal h1{
-  color: #C9D1D9;
+  color: #CBD5E1;
+  font-weight: 1000;
+  font-size: 3.5rem;
 }
 
 .appPrincipal p{
-  color: #C9D1D9;
+  color: #CBD5E1;
+  font-weight: 490;
 }
 
 .appPrincipal a{
   color: #C9D1D9;
+  text-decoration: none;
 }
 
 .perfilProfecional{
@@ -34,12 +40,13 @@ body{
   vertical-align: middle;
   justify-content: center;
   align-items: center;
+  font-family: "Dancing script", cursive;
 }
 
 .divPerfilProfecionalIzquierda img{
   border-radius: 50%;
-  height: 50wh;
-  width: 40vw;
+  height: 30wh;
+  width: 20vw;
 }
 
 .divPerfilProfecionalDerecha{
@@ -53,6 +60,10 @@ body{
   
 }
 
+.divPerfilProfecionalDerecha p{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .divContacto{
   margin-top: 5vh;
   width: 40vw;
@@ -63,6 +74,11 @@ body{
   justify-content:space-between;
   align-items: center;
   position: sticky;
+}
+
+.divContacto img{
+  height: 10vh;
+  width: 5vw;
 }
 
 .proyectos{
