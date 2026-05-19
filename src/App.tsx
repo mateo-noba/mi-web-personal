@@ -1,7 +1,9 @@
 import './App.css';
 import { Navbar } from './components/navbar';
-import foto_profesional from "./assets/images/mi_foto_profecional.png";
-import linkedin_logo from "./assets/images/LinkedIn_icon.png";
+import {Card} from './components/card';
+import foto_profesional from './assets/images/mi_foto_profecional.png';
+import pvzClone from './assets/images/FotoDelJuego1.png';
+import { IconBrandLinkedin, IconBrandGithub, IconDownload } from '@tabler/icons-react';
 
 function App() {
 
@@ -11,19 +13,40 @@ function App() {
       <div className='perfilProfecional'>
         <div className='divPerfilProfecionalIzquierda'>
           <img src={foto_profesional} alt='Mateo Noba' />
-          <h1>Mateo Noba</h1>
         </div>
         <div className='divPerfilProfecionalDerecha'>
-          <p>Estudiante de informática orientado al desarrollo de software, con interés en programación web y creación de aplicaciones. Manejo de HTML, CSS, JavaScript y TypeScript, con conocimientos en C# y C++. Experiencia con bases de datos SQL y NoSQL (MySQL y MongoDB) y herramientas como Visual Studio Code y GitHub. Enfocado en el aprendizaje continuo y en el desarrollo de soluciones bien estructuradas.</p>
+          <div className='textoProfecional'>
+            <h1>¡Hola, soy Mateo Noba!</h1>
+            <p>Técnico superior en desarrollo de software - Técnico en informática</p>
+          </div>
+          <div className='habilidadesTecnicas'>
+            <p>HTML/CSS</p>
+            <p>JavaScript</p>
+            <p>TypeScript</p>
+            <p>C++</p>
+            <p>C#</p>
+          </div>
           <div className='divContacto'>
-            <a href='https://www.linkedin.com/in/mateo-benjamin-noba-fioriti-9b0867345/' target='_blank'><img src={linkedin_logo}/></a>
-            <a href='https://github.com/mateo-noba' target='_blank' >GitHub</a>
-            <a href='./src/public/CV-Mateo-Noba.pdf' download="CV-Mateo-Noba.pdf">Descargar CV</a>
+            <a className='botonContacto' href='https://www.linkedin.com/in/mateo-benjamin-noba-fioriti-9b0867345/' target='_blank'><IconBrandLinkedin className='icono'/></a>
+            <a className='botonContacto' href='https://github.com/mateo-noba' target='_blank' ><IconBrandGithub className='icono'/></a>
+            <a className='botonDescargarCV' href='./src/public/CV-Mateo-Noba.pdf' download="CV-Mateo-Noba.pdf"><IconDownload className='icono'/>Descargar CV</a>
           </div>
         </div>
       </div>
       <div className='proyectos'>
         <h1>Proyectos</h1>
+        <div className='proyectoContenido'>
+          <Card
+          img={pvzClone}
+          texto='Plantas vs Zombies clone'
+          link='https://github.com/mateo-noba/Plantas-vs-zombies-clone.git'
+          />
+          <Card
+          img={pvzClone}
+          texto='Página de viajes'
+          link='https://github.com/mateo-noba/FNviajes.git'
+          />
+        </div>
       </div>
     </div>
   )

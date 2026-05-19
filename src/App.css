@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
 html{
   height: 100%;
   margin: 0%;
@@ -12,13 +10,12 @@ body{
 }
 
 .appPrincipal h1{
-  color: #CBD5E1;
+  color: #f1f5f9;
   font-weight: 1000;
   font-size: 3.5rem;
 }
 
 .appPrincipal p{
-  color: #CBD5E1;
   font-weight: 490;
 }
 
@@ -33,24 +30,7 @@ body{
 }
 
 .divPerfilProfecionalIzquierda{
-  width: 50vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  font-family: "Dancing script", cursive;
-}
-
-.divPerfilProfecionalIzquierda img{
-  border-radius: 50%;
-  height: 30wh;
-  width: 20vw;
-}
-
-.divPerfilProfecionalDerecha{
-  width: 50vw;
+  width: 40vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -60,29 +40,106 @@ body{
   
 }
 
+.divPerfilProfecionalIzquierda img{
+  border-radius: 50%;
+  height: 30wh;
+  width: 20vw;
+  border: #3bc7dd solid 3px;
+}
+
+
+.divPerfilProfecionalDerecha{
+  width: 60vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+  
+}
+
+.divPerfilProfecionalDerecha h1{
+  margin: 0px;
+}
+
 .divPerfilProfecionalDerecha p{
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  color: #bca9f5;
+}
+
+.habilidadesTecnicas{
+  width: 40vw;
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.habilidadesTecnicas p{
+  font-size: 1.2rem;
+  padding: 0.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  border-radius: 15px;
+  background-color: #1e293b;
+  border: #334155 solid 1px;
+  color: #3bc7dd;
 }
 
 .divContacto{
-  margin-top: 5vh;
   width: 40vw;
-  vertical-align: middle;
-  display: inline-flex;
-  flex-direction: row;
-  align-content: flex-end;
-  justify-content:space-between;
+  margin-top: 5vh;
+  display: flex;
   align-items: center;
-  position: sticky;
+  gap: 1.5vw;
 }
 
-.divContacto img{
-  height: 10vh;
-  width: 5vw;
+.icono{
+  position: relative;
+  top: 2px;
+}
+
+.botonContacto{
+  padding: 1.5vh;
+  padding-left: 2vh;
+  padding-right: 2%;
+  background-color: #1e293b;
+  border-radius: 100%;
+  border: #334155 solid 1px;
+}
+
+.botonContacto:hover{
+  background-color: #2e3f5a;
+  border: #445772 solid 1px;
+}
+
+.botonDescargarCV{
+  background-color: #1e293b;
+  padding: 1.5%;
+  border-radius: 10px;
+  border: #334155 solid 1px;
+}
+
+.botonDescargarCV:hover{
+  background-color: #2e3f5a;
+  border: #445772 solid 1px;
 }
 
 .proyectos{
   height: 100vh;
   width: 100%;
   background-color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyectoContenido{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

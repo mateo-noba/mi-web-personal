@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #0B0F19;
+    background-color: #1f2937;
     margin: 0%;
     height: 10vh;
     vertical-align: middle;
@@ -15,18 +15,22 @@
 }
 
 .navbar a{
-    color: #C9D1D9;
+    color: #f1f5f9;
     text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #3bc7dd;
 }
 
 .navbarIzquierda{
     width: 50vw;
     margin-left: 10vw;
-    color: #C9D1D9;
+    color: #f1f5f9;
 }
 
 .navbarIzquierda p{
-    color: #C9D1D9;
+    color: #f1f5f9;
 }
 
 .nabvarDerecha{
